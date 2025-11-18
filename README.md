@@ -10,8 +10,6 @@ Proses keseluruhan proyek ini dapat dibagi menjadi dua bagian utama: Pelatihan d
 
 
 
-[Image of an end-to-end machine learning workflow diagram]
-
 
 1.  **Pelatihan Model (Offline)** - Dilakukan di `main_workflow.ipynb`
     * Data mentah (CSV) dimuat dan dibersihkan (`data_emas/`).
