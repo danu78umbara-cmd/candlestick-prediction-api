@@ -18,7 +18,7 @@ Proses keseluruhan proyek ini dapat dibagi menjadi dua bagian utama: Pelatihan d
     * Model (RF & LR) dilatih, di-<em>tuning</em> (`GridSearchCV`), dan dievaluasi untuk **setiap pola candlestick secara terpisah**.
     * Model terbaik untuk setiap pola disimpan ke folder `saved_models/` sebagai file `.pkl`.
 
-2.  **Penerapan API (Online)** - Dilakukan oleh `app.py`
+2.  **Penerapan API** - Dilakukan oleh `app.py`
     * Aplikasi **Flask** (`app.py`) dijalankan.
     * Aplikasi ini memuat **semua model `.pkl`** dari `saved_models/` saat *startup*.
     * Pengguna mengirimkan data baru ke API (misalnya melalui *form* di halaman web dari `templates/`).
@@ -28,14 +28,13 @@ Proses keseluruhan proyek ini dapat dibagi menjadi dua bagian utama: Pelatihan d
 
 ```
 .
-├── 📁 data_emas/           # (Tempat data CSV mentah Anda)
+├── 📁 data_emas/           # (Tempat data CSV mentah)
 ├── 📁 saved_models/        # (Tempat model .pkl disimpan)
 ├── 📁 templates/           # (Berisi file HTML untuk antarmuka Flask)
-├── 📁 __pycache__/         # (Harusnya ada di .gitignore!)
 │
 ├── 📜 app.py               # (Aplikasi FASK utama untuk API/Web)
 ├── 📜 main_workflow        # (Notebook untuk analisis, preprocessing & training)
-├── 📜 preprocessor.py      # (Modul .py untuk fungsi preprocessing)
+├── 📜 preprocessor.py      # (Modul.py untuk fungsi preprocessing)
 ├── 📜 README.md            # (Dokumentasi ini)
 └── 📜 requirements.txt     # (Daftar library yang dibutuhkan)
 ```
